@@ -30,5 +30,7 @@ app.get('/', async (req, res) => {
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
   console.log('Server is listening on port ', PORT)
-  if (process.env.ENV == "development" ) console.log('URL', `http://localhost:${PORT}?lat=x&long=y`)
+  if (process.env.ENV == "development" ){
+    console.log('development URL,', `http://localhost:${PORT}?lat=x&long=y`)
+  } 
 })
